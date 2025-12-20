@@ -1,59 +1,96 @@
-import React from 'react'
-import {Facebook, Linkedin, Github, Mail} from 'lucide-react'
+import React from 'react';
+import { Linkedin, Github, Mail, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-      <section className="flex-1 flex flex-col items-center justify-center px-12 text-white bg-gray-900 min-h-screen">
-        {/* Profile Image */}
-        <div className="relative mb-4">
-          <div className="w-64 h-64 rounded-full overflow-hidden border-8 border-blue-400 shadow-2xl shadow-blue-400/50">
-            <img 
-              src="/Bikram Giri.jpeg" // Replace with your actual profile image URL
+    <section
+      id="home"
+      className="min-h-screen bg-gray-900 flex flex-col items-center justify-center px-6 sm:px-12 md:px-16 lg:px-20 py-16 md:py-20"
+    >
+      <div className="max-w-5xl mx-auto text-center space-y-8 md:space-y-12">
+        {/* Profile Image - Responsive sizing */}
+        <div className="relative mx-auto w-48 sm:w-56 md:w-64 lg:w-72">
+          {/* Glow Effect */}
+          <div className="absolute inset-0 rounded-full bg-blue-400 opacity-30 blur-3xl -z-10 animate-pulse"></div>
+
+          {/* Image Container */}
+          <div className="rounded-full overflow-hidden border-4 sm:border-6 md:border-8 border-blue-400 shadow-2xl">
+            <img
+              src="/Bikram Giri.jpeg"
               alt="Bikram Giri"
               className="w-full h-full object-cover"
             />
           </div>
-          {/* Optional glow effect */}
-          <div className="absolute inset-0 rounded-full bg-blue-400 opacity-20 blur-3xl -z-10"></div>
         </div>
 
-        {/* Name and Title */}
-        <h2 className="text-5xl font-bold text-blue-400 mb-2">Bikram Giri</h2>
-        <p className="text-2xl text-blue-300 mb-6">Web Developer || AI/ML Enthusiast</p>
+        {/* Name */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-400 tracking-tight">
+          Bikram Giri
+        </h1>
+
+        {/* Title */}
+        <p className="text-xl sm:text-2xl md:text-3xl text-blue-300 font-medium">
+          Web Developer || AI/ML Enthusiast
+        </p>
 
         {/* Description */}
-        <p className="text-center text-gray-400 max-w-2xl mb-10">
+        <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
           I'm currently pursuing my Bachelor's Degree at Sushma Godawari College.
         </p>
 
-        {/* Buttons */}
-        <div className="flex space-x-6 mb-8">
-          <button className="cursor-pointer px-8 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition shadow-lg">
+        {/* Buttons - Stack on mobile, side-by-side on larger screens */}
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+          <button className="w-full sm:w-auto px-8 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl shadow-lg hover:bg-blue-600 hover:shadow-xl hover:scale-105 transition-all duration-300">
             VIEW MY WORK
           </button>
-          <button className="cursor-pointer px-8 py-3 border-2 border-blue-500 text-blue-400 font-semibold rounded-md hover:bg-blue-500 hover:text-white transition">
+          <button className="w-full sm:w-auto px-8 py-4 border-2 border-blue-500 text-blue-400 font-semibold text-lg rounded-xl hover:bg-blue-500 hover:text-white hover:shadow-xl hover:scale-105 transition-all duration-300">
             CONTACT ME
           </button>
         </div>
 
-        {/* Social Icons */}
-        <div className="flex space-x-6 ">
-          <a href="#" className="text-gray-400 hover:text-blue-400 transition rounded-4xl p-4 bg-gray-700/50 shadow-lg shadow-blue-400/20">
-            <Facebook className="w-8 h-8"/>
+        {/* Social Icons - Responsive spacing and size */}
+        <div className="flex justify-center items-center gap-4 sm:gap-6">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-blue-400 transition rounded-4xl p-4 bg-gray-700/50 shadow-lg shadow-blue-400/20">
-            <Linkedin className="w-8 h-8"/>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            aria-label="GitHub"
+          >
+            <Github className="w-6 h-6 sm:w-8 sm:h-8" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-blue-400 transition rounded-4xl p-4 bg-gray-700/50 shadow-lg shadow-blue-400/20">
-            <Github className="w-8 h-8"/>
+          <a
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            aria-label="Email"
+          >
+            <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
           </a>
-          <a href="mailto:your.email@gmail.com" className="text-gray-400 hover:text-blue-400 transition rounded-4xl p-4 bg-gray-700/50 shadow-lg shadow-blue-400/20 " target="_blank"
-            rel="noopener noreferrer">
-            <Mail className="w-8 h-8"/>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            aria-label="Facebook"
+          >
+            <Facebook className="w-6 h-6 sm:w-8 sm:h-8" />
           </a>
         </div>
-      </section>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Hero
+export default Hero;

@@ -3,34 +3,22 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-black py-20 px-6">
+    <section id="about" className="min-h-screen bg-gray-950 py-12 px-6 md:py-20">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-blue-400 mb-4">About Me</h2>
-          <div className="w-32 h-1 bg-blue-400 mx-auto rounded-full"></div>
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-400 mb-4">
+            About Me
+          </h2>
+          <div className="w-24 md:w-32 h-1 bg-blue-400 mx-auto rounded-full"></div>
         </div>
 
-        {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-96 max-w-full">
-              <div className="rounded-3xl overflow-hidden border-8 border-blue-400 shadow-2xl shadow-blue-500/30">
-                <img
-                  src="/Bikram Giri.jpeg" 
-                  alt="Bikram Giri"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Optional subtle glow */}
-              <div className="absolute inset-0 rounded-3xl bg-blue-400 opacity-20 blur-3xl -z-10"></div>
-            </div>
-          </div>
+        {/* Responsive Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          {/* Text & Contact Info */}
-          <div className="space-y-8 text-gray-300">
-            <p className="text-xl leading-relaxed">
+          {/* Text Content */}
+          <div className="space-y-8 text-gray-300 order-2 lg:order-1">
+            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
               I am a passionate Web Developer with experience in creating{' '}
               <span className="text-blue-400 font-semibold">
                 responsive and easy-to-use websites
@@ -42,22 +30,54 @@ const About = () => {
               . I have worked with teams to build fast and scalable web solutions. I am excited to use my technical skills and creativity in a dynamic development team.
             </p>
 
-            {/* Contact Details */}
-            <div className="space-y-6 pt-6">
+            {/* Contact Details - Stack vertically on mobile */}
+            <div className="space-y-6 pt-4">
               <div className="flex items-center gap-4">
-                <Mail className="w-7 h-7 text-blue-400" />
-                <span className="text-lg">giribikram40@gmail.com</span>
+                <div className="p-3 bg-blue-500/20 rounded-xl">
+                  <Mail className="w-6 h-6 md:w-7 md:h-7 text-blue-400" />
+                </div>
+                <span className="text-base md:text-lg lg:text-xl">
+                  giribikram40@gmail.com
+                </span>
               </div>
+
               <div className="flex items-center gap-4">
-                <Phone className="w-7 h-7 text-blue-400" />
-                <span className="text-lg">98XXXXXXXX</span>
+                <div className="p-3 bg-blue-500/20 rounded-xl">
+                  <Phone className="w-6 h-6 md:w-7 md:h-7 text-blue-400" />
+                </div>
+                <span className="text-base md:text-lg lg:text-xl">
+                  98XXXXXXXX
+                </span>
               </div>
+
               <div className="flex items-center gap-4">
-                <MapPin className="w-7 h-7 text-blue-400" />
-                <span className="text-lg">Itahari, Sunsari</span>
+                <div className="p-3 bg-blue-500/20 rounded-xl">
+                  <MapPin className="w-6 h-6 md:w-7 md:h-7 text-blue-400" />
+                </div>
+                <span className="text-base md:text-lg lg:text-xl">
+                  Itahari, Sunsari
+                </span>
               </div>
             </div>
           </div>
+
+          {/* Profile Image - Centered on mobile, aligned properly on larger screens */}
+          <div className="flex justify-center order-1 lg:order-2">
+            <div className="relative w-full max-w-sm md:max-w-md lg:max-w-lg">
+              {/* Glow Effect */}
+              <div className="absolute inset-0 rounded-3xl bg-blue-400 opacity-30 blur-3xl -z-10 animate-pulse"></div>
+
+              {/* Image Container */}
+              <div className="rounded-3xl overflow-hidden border-4 md:border-8 border-blue-400 shadow-2xl">
+                <img
+                  src="/Bikram Giri.jpeg"
+                  alt="Bikram Giri"
+                  className="w-full h-full object-cover aspect-square md:aspect-auto"
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
