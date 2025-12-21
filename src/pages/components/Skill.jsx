@@ -45,7 +45,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="min-h-screen bg-black py-12 sm:py-16 md:py-20 px-6">
+    <section id="skills" className="min-h-screen bg-gray-950 py-12 sm:py-16 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
@@ -60,7 +60,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-blue-900/20 via-blue-950/30 to-black/40 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-blue-800/40 shadow-2xl hover:shadow-blue-500/40 hover:border-blue-600/70 hover:-translate-y-3 transition-all duration-500"
+              className="group bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-blue-800/40 shadow-2xl hover:shadow-blue-500/40 hover:border-blue-600/70 hover:-translate-y-3 transition-all duration-500"
             >
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-300 mb-5 sm:mb-7 tracking-wide">
                 {category.title}

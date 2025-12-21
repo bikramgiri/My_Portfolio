@@ -57,7 +57,7 @@ const Project = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-gray-900/50 to-black/60 backdrop-blur-sm rounded-2xl md:rounded-3xl overflow-hidden border border-blue-900/40 shadow-xl hover:shadow-2xl hover:shadow-blue-500/30 hover:-translate-y-3 transition-all duration-500"
+              className="group relative bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-md  rounded-2xl md:rounded-3xl overflow-hidden border border-blue-900/40 shadow-xl hover:shadow-2xl hover:shadow-blue-500/30 hover:-translate-y-3 transition-all duration-500"
             >
               {/* Project Image */}
               <div className="relative overflow-hidden h-48 md:h-56 lg:h-64">
@@ -67,7 +67,7 @@ const Project = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Tech Badge */}
-                <div className="absolute top-3 left-3 px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs md:text-sm font-bold rounded-full shadow-lg">
+                <div className="absolute top-3 left-3 px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r from-blue-600 to-gray-700 text-white text-xs md:text-sm font-bold rounded-full shadow-lg">
                   {project.tech}
                 </div>
                 {/* Overlay Glow */}

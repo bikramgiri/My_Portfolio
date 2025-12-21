@@ -57,7 +57,7 @@ const Education = () => {
               </div>
 
               {/* Education Card */}
-              <div className="flex-1 pb-12 md:pb-16">
+              <div className="flex-1 pb-12 md:pb-2">
                 <div className="bg-gradient-to-r bg-blue-900/30 to-transparent backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 md:p-8 border border-blue-800/30 hover:border-blue-600/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
                   
                   {/* Header with Icon */}

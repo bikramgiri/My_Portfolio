@@ -8,7 +8,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen bg-gray-900 flex flex-col items-center justify-center px-6 sm:px-12 md:px-16 lg:px-20 py-16 md:py-20"
     >
-      <div className="max-w-5xl mx-auto text-center space-y-8 md:space-y-12">
+      <div className="max-w-5xl mx-auto text-center space-y-8 md:space-y-8">
         {/* Profile Image - Responsive sizing */}
         <div className="relative mx-auto w-48 sm:w-56 md:w-64 lg:w-72">
           {/* Glow Effect */}
@@ -41,52 +41,52 @@ const Hero = () => {
 
         {/* Buttons - Stack on mobile, side-by-side on larger screens */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-          <button className="w-full sm:w-auto px-8 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl shadow-lg hover:bg-blue-600 hover:shadow-xl hover:scale-105 transition-all duration-300">
+          <Link to="#projects" className="cursor-pointer w-full sm:w-auto px-8 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl shadow-lg hover:bg-blue-600 hover:shadow-xl hover:scale-105 transition-all duration-300">
             VIEW MY WORK
-          </button>
-          <button className="w-full sm:w-auto px-8 py-4 border-2 border-blue-500 text-blue-400 font-semibold text-lg rounded-xl hover:bg-blue-500 hover:text-white hover:shadow-xl hover:scale-105 transition-all duration-300">
+          </Link>
+          <Link to="#contact" className="cursor-pointer w-full sm:w-auto px-8 py-4 border-2 border-blue-500 text-blue-400 font-semibold text-lg rounded-xl hover:bg-blue-500 hover:text-white hover:shadow-xl hover:scale-105 transition-all duration-300">
             CONTACT ME
-          </button>
+          </Link>
         </div>
 
         {/* Social Icons - Responsive spacing and size */}
         <div className="flex justify-center items-center gap-4 sm:gap-6">
-          <a
-            href="#"
+          <Link
+            to="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
-          <a
-            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
+          </Link>
+          <Link
+            to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="Email"
           >
             <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/30 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="Facebook"
           >
             <Facebook className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

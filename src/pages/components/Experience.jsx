@@ -28,7 +28,7 @@ const Experience = () => {
       period: "2020 - Present",
       icon: <BookOpen className="w-10 h-10 sm:w-12 sm:h-12 text-blue-400" />,
       link: "https://giribikram.com.np/",
-      linkText: "View Blogs",
+      linkText: "Read Blogs",
       responsibilities: [
         "Writing in-depth articles on web development, React.js, Tailwind CSS, and modern frontend technologies",
         "Sharing personal projects, learning experiences, and coding tips",
@@ -49,7 +49,7 @@ const Experience = () => {
         </div>
 
         {/* Experience Items - Stack vertically on mobile */}
-        <div className="space-y-16 md:space-y-20 lg:space-y-24">
+        <div className="space-y-16 md:space-y-20 lg:space-y-16">
           {experiences.map((experience, index) => (
             <div
               key={experience.title}

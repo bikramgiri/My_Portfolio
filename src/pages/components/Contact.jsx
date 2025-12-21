@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="min-h-screen bg-gray-950 py-12 sm:py-16 md:py-20 px-6">
+    <section id="contact" className="min-h-screen bg-gray-900 py-12 sm:py-16 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
@@ -105,28 +105,28 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-blue-950/60 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
                 required
               />
 
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-blue-950/60 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
                 required
               />
 
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-blue-950/60 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
                 required
               />
 
               <textarea
                 placeholder="Your Message"
                 rows="5"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-blue-950/60 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300 resize-none"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300 resize-none"
                 required
               ></textarea>
 

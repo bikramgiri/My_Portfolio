@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -36,18 +37,18 @@ const About = () => {
                 <div className="p-3 bg-blue-500/20 rounded-xl">
                   <Mail className="w-6 h-6 md:w-7 md:h-7 text-blue-400" />
                 </div>
-                <span className="text-base md:text-lg lg:text-xl">
+                <Link to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com" target="_blank" rel="noopener noreferrer" className="text-base md:text-lg lg:text-xl hover:text-blue-400 transition-colors duration-300">
                   giribikram40@gmail.com
-                </span>
+                </Link>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-blue-500/20 rounded-xl">
                   <Phone className="w-6 h-6 md:w-7 md:h-7 text-blue-400" />
                 </div>
-                <span className="text-base md:text-lg lg:text-xl">
+                <Link to="tel:98XXXXXXXX" className="text-base md:text-lg lg:text-xl hover:text-blue-400 transition-colors duration-300">
                   98XXXXXXXX
-                </span>
+                </Link>
               </div>
 
               <div className="flex items-center gap-4">
