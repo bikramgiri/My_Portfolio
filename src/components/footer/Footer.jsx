@@ -3,11 +3,21 @@ import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const quickLinks = ["About", "Experience", "Education", "Projects", "Skills", "Contact"];
+
+  const handleSmoothScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id.toLowerCase());
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <footer className="bg-gradient-to-t bg-gray-800 py-12 sm:py-16 md:py-6 px-6 border-t border-blue-900/50">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
           {/* Left: Name & Description + Social Icons */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-6">
@@ -20,7 +30,7 @@ const Footer = () => {
             </div>
 
             {/* Social Icons - Centered on mobile */}
-            <div className="flex justify-center lg:justify-start gap-2 sm:gap-2.5">
+            <div className="flex justify-center lg:justify-start gap-4 sm:gap-3">
               <Link
                 to="#"
                 target="_blank"
@@ -62,14 +72,15 @@ const Footer = () => {
           <div className="text-center lg:text-left">
             <h4 className="text-xl sm:text-2xl font-semibold text-white mb-6">Quick Links</h4>
             <ul className="space-y-4 inline-block">
-              {["About", "Experience", "Education", "Projects", "Skills", "Contact"].map((link) => (
+              {quickLinks.map((link) => (
                 <li key={link}>
-                  <Link
-                    to={`/#${link.toLowerCase()}`}
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    onClick={(e) => handleSmoothScroll(e, link.toLowerCase())}
                     className="text-base sm:text-lg text-gray-400 hover:text-blue-400 transition-colors duration-300 block"
                   >
                     {link}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -101,41 +112,41 @@ const Footer = () => {
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <Mail className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 flex-shrink-0" />
-                <Link
-                  to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
+                <a
+                  href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base sm:text-lg text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 >
                   giribikram40@gmail.com
-                </Link>
+                </a>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <Phone className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 flex-shrink-0" />
-                <Link
-                  to="tel:98XXXXXXXX"
+                <a
+                  href="tel:98XXXXXXXX"
                   className="text-base sm:text-lg text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 >
                   98XXXXXXXX
-                </Link>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Copyright & Links */}
-        <div className="mt-12 pt-8 border-t border-blue-800/60 text-center">
+        <div className="mt-12 pt-8 border-t border-blue-800/50 text-center">
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 text-sm sm:text-base">
             <p className="text-gray-500">
               © {new Date().getFullYear()} Bikram Giri. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
                 Privacy Policy
-              </Link>
-              <Link to="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+              </a>
+              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
                 Terms of Service
-              </Link>
+              </a>
             </div>
           </div>
         </div>

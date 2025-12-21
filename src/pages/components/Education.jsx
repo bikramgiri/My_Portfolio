@@ -39,7 +39,7 @@ const Education = () => {
         </div>
 
         {/* Education Timeline - Vertical stack on all screens */}
-        <div className="space-y-12 md:space-y-16 lg:space-y-20">
+        <div className="space-y-12 md:space-y-16 lg:space-y-10">
           {educationList.map((edu, index) => (
             <div
               key={index}
