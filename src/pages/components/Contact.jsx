@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_0er77rp', 'template_n118t5c', form.current, {
+        publicKey: 'rOjAK0v3HoqH6XcUn',
+      })
+      .then(
+        () => {
+          // Display success message only for 3 seconds
+          setSuccessMessage("Email sent successfully!");
+          setErrorMessage("");
+          form.current.reset(); // Reset the form after successful submission
+          setTimeout(() => {
+            setSuccessMessage("");
+          }, 4000);
+        },
+        (error) => {
+          // Display error message only for 3 seconds
+          setErrorMessage("Failed to send email. Please try again.");
+          setSuccessMessage("");
+          console.error("EmailJS Error:", error);
+          setTimeout(() => {
+            setErrorMessage("");
+          }, 4000); 
+        }
+      );
+  };
+
   return (
     <section id="contact" className="min-h-screen bg-gray-900 py-12 sm:py-16 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -72,27 +106,27 @@ const Contact = () => {
 
             {/* Social Icons */}
             <div className="flex gap-4 md:gap-6 mt-10 md:mt-14">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="p-3 md:p-4 bg-blue-500/20 rounded-2xl hover:bg-blue-500/40 hover:scale-110 transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="p-3 md:p-4 bg-blue-500/20 rounded-2xl hover:bg-blue-500/40 hover:scale-110 transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="p-3 md:p-4 bg-blue-500/20 rounded-2xl hover:bg-blue-500/40 hover:scale-110 transition-all duration-300"
                 aria-label="Twitter"
               >
                 <Twitter className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -102,9 +136,10 @@ const Contact = () => {
               Send Me a Message
             </h3>
 
-            <form className="space-y-5 md:space-y-6">
+            <form ref={form} onSubmit={sendEmail} className="space-y-5 md:space-y-6">
               <input
                 type="text"
+                name="user_name"
                 placeholder="Your Name"
                 className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
                 required
@@ -112,6 +147,7 @@ const Contact = () => {
 
               <input
                 type="email"
+                name="user_email"
                 placeholder="Your Email"
                 className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
                 required
@@ -119,12 +155,14 @@ const Contact = () => {
 
               <input
                 type="text"
+                name="subject"
                 placeholder="Subject"
                 className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
                 required
               />
 
               <textarea
+                name="message"
                 placeholder="Your Message"
                 rows="5"
                 className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300 resize-none"
@@ -137,6 +175,12 @@ const Contact = () => {
               >
                 Send Message
               </button>
+              {successMessage && (
+                <p className="text-green-400 text-base md:text-lg text-center font-medium">{successMessage}</p>
+              )}
+              {errorMessage && (
+                <p className="text-red-600 text-base md:text-lg text-center font-medium">{errorMessage}</p>
+              )}
             </form>
           </div>
         </div>
