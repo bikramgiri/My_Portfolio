@@ -20,7 +20,11 @@ import {
   SiMongodb,
   SiMysql,
   SiCanva,
+  SiAdobephotoshop,
+  SiAdobepremierepro,
+  SiWordpress,
   // SiMicrosoftpowerpoint,
+  // SiMicrosoftword,
   SiFigma,
   SiGit,
   SiGithub,
@@ -43,6 +47,7 @@ const Skills = () => {
         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-6 h-6 md:w-8 md:h-8" /> },
         { name: "TypeScript", icon: <SiTypescript className="w-6 h-6 md:w-8 md:h-8" /> },
         { name: "Next.js", icon: <SiNextdotjs className="w-6 h-6 md:w-8 md:h-8" /> },
+        { name: "WordPress", icon: <SiWordpress className="w-6 h-6 md:w-8 md:h-8" /> },
       ],
     },
     {
@@ -52,6 +57,7 @@ const Skills = () => {
         { name: "Express.js", icon: <SiExpress className="w-6 h-6 md:w-8 md:h-8" /> },
         { name: "Next.js", icon: <SiNextdotjs className="w-6 h-6 md:w-8 md:h-8" /> },
         { name: "FastAPI", icon: <SiFastapi className="w-6 h-6 md:w-8 md:h-8" /> },
+        {name: "WordPress", icon: <SiWordpress className="w-6 h-6 md:w-8 md:h-8" />},
       ],
     },
     {
@@ -75,6 +81,8 @@ const Skills = () => {
       skills: [
         { name: "Canva", icon: <SiCanva className="w-6 h-6 md:w-8 md:h-8" /> },
         { name: "Figma", icon: <SiFigma className="w-6 h-6 md:w-8 md:h-8" /> },
+        { name: "Adobe Photoshop", icon: <SiAdobephotoshop className="w-6 h-6 md:w-8 md:h-8" /> },
+        { name: "Adobe Premiere Pro", icon: <SiAdobepremierepro className="w-6 h-6 md:w-8 md:h-8" /> },
       ],
     },
     {

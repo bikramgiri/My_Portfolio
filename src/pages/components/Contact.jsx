@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -21,7 +22,7 @@ const Contact = () => {
               Get In Touch
             </h3>
             <p className="text-base sm:text-lg text-gray-300 mb-8 md:mb-12 leading-relaxed">
-              Feel free to reach out to me for any inquiries or opportunities.
+              I’m actively seeking new opportunities to collaborate on exciting projects. Whether you have a question or simply want to connect, I’ll do my best to respond promptly.
             </p>
 
             {/* Contact Info */}
@@ -32,14 +33,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm md:text-base text-gray-400">Email</p>
-                  <a
-                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
+                  <Link
+                    to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-lg sm:text-xl text-white hover:text-blue-400 transition-colors duration-300"
                   >
                     giribikram40@gmail.com
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -49,12 +50,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm md:text-base text-gray-400">Phone</p>
-                  <a
-                    href="tel:9814363662"
+                  <Link
+                    to="tel:98XXXXXXXX"
                     className="text-lg sm:text-xl text-white hover:text-blue-400 transition-colors duration-300"
                   >
                     98XXXXXXXX
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -132,7 +133,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full py-4 md:py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg md:text-xl rounded-xl shadow-lg hover:from-blue-600 hover:to-blue-700 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                className="cursor-pointer w-full py-4 md:py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg md:text-xl rounded-xl shadow-lg hover:from-blue-600 hover:to-blue-700 hover:shadow-2xl hover:scale-105 transition-all duration-300"
               >
                 Send Message
               </button>
