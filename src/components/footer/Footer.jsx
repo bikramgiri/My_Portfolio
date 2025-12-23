@@ -74,13 +74,13 @@ const Footer = () => {
             <ul className="space-y-4 inline-block">
               {quickLinks.map((link) => (
                 <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
+                  <Link
+                    to={`#${link.toLowerCase()}`}
                     onClick={(e) => handleSmoothScroll(e, link.toLowerCase())}
                     className="text-base sm:text-lg text-gray-400 hover:text-blue-400 transition-colors duration-300 block"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -112,23 +112,23 @@ const Footer = () => {
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <Mail className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 flex-shrink-0" />
-                <a
+                <Link
                   href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base sm:text-lg text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 >
                   giribikram40@gmail.com
-                </a>
+                </Link>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <Phone className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 flex-shrink-0" />
-                <a
+                <Link
                   href="tel:98XXXXXXXX"
                   className="text-base sm:text-lg text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 >
                   98XXXXXXXX
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -141,12 +141,12 @@ const Footer = () => {
               © {new Date().getFullYear()} Bikram Giri. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+              <Link to="#" className="text-gray-500 hover:text-blue-400 transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+              </Link>
+              <Link to="#" className="text-gray-500 hover:text-blue-400 transition-colors">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>
