@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, SendIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
@@ -17,28 +17,26 @@ const Contact = () => {
       })
       .then(
         () => {
-          // Display success message only for 3 seconds
-          setSuccessMessage("Email sent successfully!");
+          setSuccessMessage("Message sent successfully!");
           setErrorMessage("");
           form.current.reset(); // Reset the form after successful submission
           setTimeout(() => {
             setSuccessMessage("");
-          }, 4000);
+          }, 3000);
         },
         (error) => {
-          // Display error message only for 3 seconds
-          setErrorMessage("Failed to send email. Please try again.");
+          setErrorMessage("Failed to send message. Please try again.");
           setSuccessMessage("");
           console.error("EmailJS Error:", error);
           setTimeout(() => {
             setErrorMessage("");
-          }, 4000); 
+          }, 3000); 
         }
       );
   };
 
   return (
-    <section id="contact" className="min-h-screen bg-gray-900 py-12 sm:py-16 md:py-20 px-6">
+    <section id="contact" className="min-h-screen bg-gray-950 py-12 sm:py-16 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
@@ -171,8 +169,9 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="cursor-pointer w-full py-4 md:py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg md:text-xl rounded-xl shadow-lg hover:from-blue-600 hover:to-blue-700 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                className="cursor-pointer flex-1 flex items-center justify-center gap-2 py-4 w-full  md:py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg md:text-xl rounded-xl shadow-lg hover:from-blue-600 hover:to-blue-700 hover:shadow-2xl hover:scale-105 transition-all duration-300"
               >
+                <SendIcon className="h-5 w-5" />
                 Send Message
               </button>
               {successMessage && (
