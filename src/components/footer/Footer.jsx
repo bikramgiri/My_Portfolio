@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const quickLinks = ["About", "Experience", "Education", "Projects", "Skills", "Contact"];
+  const quickLinks = ["About", "Experience", "Education", "Projects", "Skills", "Achievements", "Contact"];
 
   const handleSmoothScroll = (e, id) => {
     e.preventDefault();
