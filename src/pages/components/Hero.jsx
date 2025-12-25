@@ -39,12 +39,12 @@ const Hero = () => {
 
         {/* Title */}
         <p className="text-xl sm:text-2xl md:text-3xl text-blue-300 font-medium">
-          Web Developer || AI/ML Enthusiast
+          Web Developer | AI/ML Enthusiast
         </p>
 
         {/* Description */}
         <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
-          I'm currently pursuing my Bachelor's Degree at Sushma Godawari College.
+          Hi, I’m Bikram Giri – a Web Developer and AI/ML Enthusiast building modern, scalable web solutions.
         </p>
 
         {/* Buttons - Stack on mobile, side-by-side on larger screens */}

@@ -19,20 +19,18 @@ const About = () => {
 
           {/* Text Content */}
           <div className="space-y-8 text-gray-300 order-2 lg:order-1">
-            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
-              I am a passionate Web Developer with experience in creating{' '}
-              <span className="text-blue-400 font-semibold">
-                responsive and easy-to-use websites
-              </span>
-              . I am skilled in{' '}
-              <span className="text-blue-400 font-semibold">
-                React.js, Node.js, Next.js, and Tailwind CSS
-              </span>
-              . I have worked with teams to build fast and scalable web solutions. I am excited to use my technical skills and creativity in a dynamic development team.
+            <h1 className='text-3xl md:text-3xl lg:text-4xl font-extrabold text-blue-500'>
+              Hi, I'm Bikram Giri
+            </h1>
+            <p className="text-lg md:text-xl lg:text-2xl  leading-relaxed">
+              A <span className="text-blue-400 font-semibold">Web Developer</span> and <span className="text-blue-400 font-semibold">AI/ML Enthusiast</span>  pursuing B.Sc. CSIT at Tribhuvan University. 
+              I create innovative web solutions, explore AI/ML technologies, and share insights on my tech blog. 
+              Passionate about <span className="text-blue-400 font-semibold">learning</span>, <span className="text-blue-400 font-semibold">collaboration</span>, and <span className="text-blue-400 font-semibold">solving real-world problems</span>, 
+              I aim to make an impact through technology.
             </p>
 
             {/* Contact Details - Stack vertically on mobile */}
-            <div className="space-y-6 pt-4">
+            <div className="space-y-6 pt-2">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-blue-500/20 rounded-xl">
                   <Mail className="w-6 h-6 md:w-7 md:h-7 text-blue-400" />
