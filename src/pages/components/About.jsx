@@ -71,8 +71,8 @@ const About = () => {
               {/* Image Container */}
               <div className="rounded-xl overflow-hidden border-4 md:border-6 border-blue-400 shadow-lg">
                 <img
-                  src="/Bikram Giri Portfolio.jpg"
-                  alt="Bikram Giri Portfolio"
+                  src="/Bikram Giri.jpg"
+                  alt="Bikram Giri"
                   className="w-full h-full object-cover aspect-square md:aspect-auto"
                 />
               </div>
