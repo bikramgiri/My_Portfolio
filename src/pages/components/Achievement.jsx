@@ -285,7 +285,7 @@ const Achievements = () => {
               disabled={currentPage === 1}
               className={`cursor-pointer p-3 rounded-full transition-all duration-300 ${
                 currentPage === 1
-                  ? "bg-gray-800/50 text-gray-600 cursor-not-allowed disabled:cursor-not-allowed"
+                  ? "bg-gray-800/95 dark:text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
                   : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80 hover:scale-110 shadow-lg"
               }`}
             >
@@ -314,7 +314,7 @@ const Achievements = () => {
               disabled={currentPage === totalPages}
               className={`cursor-pointer p-3 rounded-full transition-all duration-300 ${
                 currentPage === totalPages
-                  ? "bg-gray-800/50 text-gray-600 cursor-not-allowed disabled:cursor-not-allowed"
+                  ? "bg-gray-800/95 text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
                   : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80 hover:scale-110 shadow-lg"
               }`}
             >

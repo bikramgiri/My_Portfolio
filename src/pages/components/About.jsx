@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen bg-gray-950 py-12 px-6 md:py-20">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="min-h-screen bg-gray-950/94 py-12 px-6 md:py-20">
+      <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-400 mb-4">
@@ -69,10 +69,10 @@ const About = () => {
               <div className="absolute inset-0 rounded-3xl bg-blue-400 opacity-30 blur-3xl -z-10 animate-pulse"></div>
 
               {/* Image Container */}
-              <div className="rounded-3xl overflow-hidden border-4 md:border-8 border-blue-400 shadow-2xl">
+              <div className="rounded-xl overflow-hidden border-4 md:border-6 border-blue-400 shadow-lg">
                 <img
-                  src="/Bikram Giri.jpeg"
-                  alt="Bikram Giri"
+                  src="/Bikram Giri Portfolio.jpg"
+                  alt="Bikram Giri Portfolio"
                   className="w-full h-full object-cover aspect-square md:aspect-auto"
                 />
               </div>

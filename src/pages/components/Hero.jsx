@@ -67,42 +67,42 @@ const Hero = () => {
 
         {/* Social Icons - Responsive spacing and size */}
         <div className="flex justify-center items-center gap-4 sm:gap-6">
-          <a
-            href="#"
+          <Link
+            to="#"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
-          <a
-            href="https://mail.google.com/mail/u/0/#compose?to=giribikram40@gmail.com"
+          </Link>
+          <Link
+            to="https://mail.google.com/mail/u/0/#compose?to=giribikram40@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="Email"
           >
             <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="Facebook"
           >
             <Facebook className="w-6 h-6 sm:w-8 sm:h-8" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
