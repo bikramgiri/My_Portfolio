@@ -225,7 +225,7 @@ const Project = () => {
                     href={project.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 py-3 bg-gray-900 text-gray-200 rounded-xl hover:bg-gray-700 hover:text-white transition-all duration-300"
+                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gray-900 text-gray-200 rounded-xl hover:bg-gray-700 hover:text-white transition-all duration-300"
                   >
                     <Github className="w-5 h-5" />
                     Source Code
@@ -234,7 +234,7 @@ const Project = () => {
                     to={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     <ExternalLink className="w-5 h-5" />
                     Live Preview

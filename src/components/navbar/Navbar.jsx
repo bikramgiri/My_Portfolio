@@ -134,7 +134,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(false)}
           />
 
-          <div className="absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-gradient-to-b from-gray-900 to-blue-950 shadow-2xl overflow-y-auto">
+          <div className="absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-gray-900/95 shadow-2xl overflow-y-auto">
             <div className="p-6 sm:p-8">
               <div className="flex items-center justify-between mb-10">
                 <h3 className="text-2xl sm:text-3xl font-bold text-blue-400">Menu</h3>

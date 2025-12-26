@@ -17,9 +17,10 @@ const Experience = () => {
       link: "https://www.youtube.com/@technologyknowledgee",
       linkText: "View Channel",
       responsibilities: [
-        "Creating engaging tech tutorials, web development guides, and programming content",
-        "Growing and managing a tech-focused audience on YouTube",
-        "Scripting, filming, editing, and optimizing videos for better reach"
+          "Creating engaging videos on web development, AI tools, AI agents, and real-world project showcases",
+          "Explaining complex AI and web development concepts in a simple, beginner-friendly way",
+          "Building and sharing innovative web and AI projects, demos, and practical implementations",
+          "Growing and managing a tech-focused audience through informative, value-driven content"
       ]
     },
     {
@@ -30,10 +31,11 @@ const Experience = () => {
       link: "https://giribikram.com.np/",
       linkText: "Read Blogs",
       responsibilities: [
-        "Writing in-depth articles on web development, React.js, Tailwind CSS, and modern frontend technologies",
-        "Sharing personal projects, learning experiences, and coding tips",
-        "Building a personal brand through consistent, high-quality technical content"
-      ]
+        "Writing in-depth blogs on technology, AI, AI tools, and emerging digital trends",
+        "Creating high-quality BSc CSIT notes, e-books, and study resources for students",
+        "Sharing practical learning experiences, tutorials, and career-focused insights",
+        "Building a trusted personal brand through consistent, SEO-optimized educational content"
+     ]
     }
   ];
 
@@ -67,7 +69,7 @@ const Experience = () => {
 
               {/* Experience Card */}
               <div className="w-full max-w-3xl mt-8">
-                <div className="group bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 md:p-10 border border-blue-800/30 hover:border-blue-600/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                <div className="group bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 md:p-10 border border-blue-800/30 hover:border-blue-600/25 transition-all duration-500 shadow-md hover:shadow-xl hover:shadow-blue-500/10">
                   
                   {/* Header */}
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-6">
