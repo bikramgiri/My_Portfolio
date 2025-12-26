@@ -24,7 +24,7 @@ const About = () => {
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl  leading-relaxed">
               A <span className="text-blue-400 font-semibold">Web Developer</span> and <span className="text-blue-400 font-semibold">AI/ML Enthusiast</span>  pursuing B.Sc. CSIT at Tribhuvan University. 
-              I create innovative web solutions, explore AI/ML technologies, and share insights on my <Link to="https://giribikram.com.np/" className="text-blue-400 font-semibold underline">Bikram's Blog</Link>. 
+              I create innovative web solutions, explore AI/ML technologies, and share insights on my <Link to="https://giribikram.com.np/" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-semibold underline">Bikram's Blog</Link>. 
               Passionate about <span className="text-blue-400 font-semibold">learning</span>, <span className="text-blue-400 font-semibold">collaboration</span>, and <span className="text-blue-400 font-semibold">solving real-world problems</span>, 
               I aim to make an impact through technology.
             </p>
