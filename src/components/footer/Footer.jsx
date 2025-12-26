@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
             {/* Social Icons - Centered on mobile */}
             <div className="flex justify-center lg:justify-start gap-4 sm:gap-3">
               <Link
-                to="#"
+                to="https://www.linkedin.com/in/bikram-giri/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3.5 bg-blue-900/30 rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-800/50 hover:scale-110 transition-all duration-300"
@@ -41,13 +41,22 @@ const Footer = () => {
                 <Linkedin className="w-6 h-6 sm:w-7 sm:h-7" />
               </Link>
               <Link
-                to="#"
+                to="https://github.com/bikramgiri"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3.5 bg-blue-900/30 rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-800/50 hover:scale-110 transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github className="w-6 h-6 sm:w-7 sm:h-7" />
+              </Link>
+              <Link
+                to="https://www.youtube.com/@technologyknowledgee"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3.5 bg-blue-900/30 rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-800/50 hover:scale-110 transition-all duration-300"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-6 h-6 sm:w-7 sm:h-7" />
               </Link>
               <Link
                 to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
@@ -57,13 +66,6 @@ const Footer = () => {
                 aria-label="Email"
               >
                 <Mail className="w-6 h-6 sm:w-7 sm:h-7" />
-              </Link>
-              <Link
-                to="tel:98XXXXXXXX"
-                className="p-3.5 bg-blue-900/30 rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-800/50 hover:scale-110 transition-all duration-300"
-                aria-label="Phone"
-              >
-                <Phone className="w-6 h-6 sm:w-7 sm:h-7" />
               </Link>
             </div>
           </div>

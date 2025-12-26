@@ -1,5 +1,5 @@
 import React from "react";
-import { Linkedin, Github, Mail, Facebook } from "lucide-react";
+import { Linkedin, Github, Mail, Facebook, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -69,7 +69,7 @@ const Hero = () => {
         {/* Social Icons - Responsive spacing and size */}
         <div className="flex justify-center items-center gap-4 sm:gap-6">
           <Link
-            to="#"
+            to="https://www.linkedin.com/in/bikram-giri/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
@@ -78,13 +78,22 @@ const Hero = () => {
             <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
           </Link>
           <Link
-            to="#"
+            to="https://github.com/bikramgiri"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6 sm:w-8 sm:h-8" />
+          </Link>
+          <Link
+            to="https://www.youtube.com/@technologyknowledgee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"
+            aria-label="YouTube"
+          >
+            <Youtube className="w-6 h-6 sm:w-8 sm:h-8" />
           </Link>
           <Link
             to="https://mail.google.com/mail/u/0/#compose?to=giribikram40@gmail.com"
@@ -96,7 +105,7 @@ const Hero = () => {
             <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
           </Link>
           <Link
-            to="#"
+            to="https://www.facebook.com/bikramgiriofficial"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 sm:p-4 bg-blue-900/30 backdrop-blur-sm rounded-2xl text-gray-400 hover:text-blue-400 hover:bg-blue-900/50 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 transition-all duration-300"

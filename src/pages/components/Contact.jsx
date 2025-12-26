@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, SendIcon } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, SendIcon, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
@@ -105,21 +105,36 @@ const Contact = () => {
             {/* Social Icons */}
             <div className="flex gap-4 md:gap-6 mt-10 md:mt-14">
               <Link
-                to="#"
+                to="https://github.com/bikramgiri"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 md:p-4 bg-blue-500/20 rounded-2xl hover:bg-blue-500/40 hover:scale-110 transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
               </Link>
               <Link
-                to="#"
+                to="https://www.linkedin.com/in/bikram-giri/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 md:p-4 bg-blue-500/20 rounded-2xl hover:bg-blue-500/40 hover:scale-110 transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
               </Link>
               <Link
-                to="#"
+                to="https://www.youtube.com/@technologyknowledgee"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 md:p-4 bg-blue-500/20 rounded-2xl hover:bg-blue-500/40 hover:scale-110 transition-all duration-300"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+              </Link>
+              <Link
+                to="https://x.com/bikram__giri/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 md:p-4 bg-blue-500/20 rounded-2xl hover:bg-blue-500/40 hover:scale-110 transition-all duration-300"
                 aria-label="Twitter"
               >

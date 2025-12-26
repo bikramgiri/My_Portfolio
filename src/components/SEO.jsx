@@ -45,7 +45,8 @@ const SEO = () => {
           "sameAs": [
             "https://www.linkedin.com/in/bikram-giri/",
             "https://github.com/bikramgiri",
-            "https://x.com/bikram__giri/"
+            "https://x.com/bikram__giri/",
+            "https://www.youtube.com/@technologyknowledgee"
           ],
           "alumniOf": {
             "@type": "CollegeOrUniversity",
