@@ -10,7 +10,7 @@ const SEO = () => {
   return (
     <Helmet>
       {/* Primary SEO */}
-      <title>{name} | Web Developer & AI/ML Enthusiast</title>
+      <title>{name}</title>
       <meta name="description" content={description} />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={siteUrl} />
@@ -18,7 +18,7 @@ const SEO = () => {
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={siteUrl} />
-      <meta property="og:title" content={`${name} | Web Developer & AI/ML Enthusiast`} />
+      <meta property="og:title" content={name} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`${siteUrl}/og-bikram-giri.jpg`} />
       <meta property="og:image:width" content="1200" />
@@ -27,7 +27,7 @@ const SEO = () => {
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={`${name} | Web Developer & AI/ML Enthusiast`} />
+      <meta name="twitter:title" content= {name} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={`${siteUrl}/og-bikram-giri.jpg`} />
 
