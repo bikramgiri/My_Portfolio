@@ -7,10 +7,12 @@ import Project from '../components/Project'
 import Contact from '../components/Contact'
 import Skill from '../components/Skill'
 import Achievements from '../components/Achievement'
+import SEO from '../../components/SEO'
 
 const Home = () => {
   return (
     <>
+      <SEO />
       <Hero />
       <About />
       <Experience />

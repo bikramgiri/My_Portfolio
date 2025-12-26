@@ -25,8 +25,9 @@ const Hero = () => {
           {/* Image Container */}
           <div className="rounded-full overflow-hidden border-4 sm:border-6 md:border-8 border-blue-400 shadow-2xl">
             <img
-              src="/Bikram Giri.jpeg"
-              alt="Bikram Giri"
+              src="/bikram-giri.png"
+              alt="Bikram Giri – Web Developer and AI/ML Enthusiast"
+              loading="lazy" // Optimize image loading
               className="w-full h-full object-cover"
             />
           </div>

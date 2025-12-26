@@ -69,8 +69,9 @@ const About = () => {
               {/* Image Container */}
               <div className="rounded-xl overflow-hidden border-4 md:border-6 border-blue-400 shadow-lg">
                 <img
-                  src="/Bikram Giri.jpg"
-                  alt="Bikram Giri"
+                  src="/about-bikram-giri.jpg"
+                  alt="Bikram Giri – Web Developer and AI/ML Enthusiast"
+                  loading="lazy" // Optimize image loading
                   className="w-full h-full object-cover aspect-square md:aspect-auto"
                 />
               </div>
