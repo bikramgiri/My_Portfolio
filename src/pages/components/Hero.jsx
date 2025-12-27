@@ -29,7 +29,7 @@ const Hero = () => {
     }
   };
 
-  const phoneNumber = "9819087786";
+  const phoneNumber = "98XXXXXXXX";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello Bikram`;
 
   const [currentIndex, setCurrentIndex] = useState(0);
