@@ -14,6 +14,7 @@ dist-ssr
 
 
 src/pages/components/Hero1.jsx
+.env
 
 # Editor directories and files
 .vscode/*

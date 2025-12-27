@@ -28,9 +28,9 @@ const Hero = () => {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
-
-  const phoneNumber = "9819087786";
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello Bikram`;
+  const phoneNumber = import.meta.env.VITE_PHONE_Number;
+  // const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello Bikram`;
+  const whatsappUrl = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=Hello Bikram&type=phone_number&app_absent=0`
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
