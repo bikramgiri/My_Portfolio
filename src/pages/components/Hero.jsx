@@ -90,19 +90,19 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gray-900 flex items-center justify-center px-5 sm:px-6 lg:px-8 py-8 md:py-10"
+      className="relative min-h-screen bg-gray-900 flex items-center justify-center px-5 sm:px-6 lg:px-8 py-8 md:py-10 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center gap-10 xl:gap-16">
           {/* Left - Text Content */}
-          <div className="w-[55%] text-center lg:text-left space-y-6 md:space-y-7">
+          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6 md:space-y-7">
             {/* Greeting */}
             <div className="inline-flex items-center justify-center gap-3 text-blue-600 text-4xl sm:text-5xl font-bold">
               <span>👋</span>
               <span>Hi, I'm a</span>
             </div>
 
-            {/* Display Full stack Developer, AI/ML Enthauisast, Software Developer, and Content Creator one by one*/}
+            {/* Animated Title */}
             <h1
               className={`text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-blue-600 tracking-tight min-h-[1em] transition-all duration-300
             `}
@@ -126,8 +126,8 @@ const Hero = () => {
               driven by a passion for AI, automation, and real-world solutions.
             </p>
 
-            {/* Main content box */}
-            <div className="border border-gray-600/70 rounded-xl md:rounded-xl w-full max-w-[90vw] sm:max-w-md md:max-w-lg lg:max-w-xl  p-3 sm:p-4 md:p-2">
+            {/* Availability Banner */}
+            <div className="border border-gray-600/70 rounded-xl md:rounded-2xl w-full max-w-[90vw] sm:max-w-md md:max-w-lg lg:max-w-xl p-3 sm:p-4 md:p-2">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center sm:text-left">
                 {/* Green dot + Available for projects */}
                 <div className="flex items-center gap-3 sm:gap-4">
@@ -157,7 +157,7 @@ const Hero = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 justify-center items-center lg:justify-start">
               <Link
                 to="#projects"
                 onClick={(e) => handleSmoothScroll(e, "projects")}
@@ -240,7 +240,7 @@ const Hero = () => {
           </div>
       
           {/* Right - Image */}
-          <div className="w-[40%] flex justify-center lg:justify-end mt-6 lg:mt-0">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0">
             <div className="relative">
               {/* Glow Effect */}
               <div className="absolute inset-0 rounded-full bg-blue-400 opacity-30 blur-3xl -z-10 animate-pulse"></div>

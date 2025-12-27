@@ -4,7 +4,7 @@ const ScrollToExplore = () => {
   return (
     <div className="
       absolute 
-      bottom-4 sm:bottom-10 md:bottom-12 
+      bottom-6 sm:bottom-12 md:bottom-22 
       left-1/2 
       -translate-x-1/2 
       z-30 
