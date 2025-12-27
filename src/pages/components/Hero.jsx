@@ -7,9 +7,11 @@ import {
   Youtube,
   YoutubeIcon,
   Twitter,
+  ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
+import ScrollToExplore from "../../components/ScrollToExplore";
 
 const titles = [
   "Full Stack Developer",
@@ -27,7 +29,7 @@ const Hero = () => {
     }
   };
 
-  const phoneNumber = "9819087786"; 
+  const phoneNumber = "9819087786";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello Bikram`;
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,12 +89,12 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gray-900 flex items-center justify-center px-5 sm:px-6 lg:px-8 py-12 md:py-16"
+      className="min-h-screen bg-gray-900 flex items-center justify-center px-5 sm:px-6 lg:px-8 py-8 md:py-10"
     >
-      <div className="max-w-7xl mx-auto w-full mb-10 md:mb-24">
+      <div className="max-w-7xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center gap-10 xl:gap-16">
           {/* Left - Text Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6 md:space-y-8">
+          <div className="w-[55%] text-center lg:text-left space-y-6 md:space-y-7">
             {/* Greeting */}
             <div className="inline-flex items-center justify-center gap-3 text-blue-600 text-4xl sm:text-5xl font-bold">
               <span>👋</span>
@@ -101,13 +103,13 @@ const Hero = () => {
 
             {/* Display Full stack Developer, AI/ML Enthauisast, Software Developer, and Content Creator one by one*/}
             <h1
-              className={`text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-blue-600 tracking-tight min-h-[1.2em] transition-all duration-300
+              className={`text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-blue-600 tracking-tight min-h-[1em] transition-all duration-300
             `}
             >
               {displayText}
               <span
                 className={`
-            inline-block w-1 h-[1.2em]  
+            inline-block w-1 h-[1em]  
             ml-1 rounded-sm
             ${blink ? "opacity-100" : "opacity-0"}
             transition-opacity duration-150
@@ -116,12 +118,42 @@ const Hero = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-xl mx-auto lg:mx-0 leading-relaxed">
               Building modern, scalable web applications with cutting-edge
               technologies. I create high-performance, user-focused digital
               experiences with clean architecture, strong UX, and accessibility
               driven by a passion for AI, automation, and real-world solutions.
             </p>
+
+            {/* Main content box */}
+            <div className="border border-gray-600/70 rounded-xl md:rounded-xl w-full max-w-[90vw] sm:max-w-md md:max-w-lg lg:max-w-xl  p-3 sm:p-4 md:p-2">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center sm:text-left">
+                {/* Green dot + Available for projects */}
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-3 h-3 sm:w-3 sm:h-3 bg-green-500 rounded-full"></div>
+                    <div className="absolute inset-0 bg-green-400 rounded-full animate-ping opacity-40"></div>
+                  </div>
+                  <span className="text-green-400 font-semibold text-base sm:text-md md:text-md">
+                    Available for projects
+                  </span>
+                </div>
+
+                {/* Divider - hidden on mobile */}
+                <div className="hidden sm:block w-px h-8 bg-gray-600/70"></div>
+
+                {/* Blue dot + Open for freelance */}
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-3 h-3 sm:w-3 sm:h-3 bg-blue-500 rounded-full"></div>
+                    <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-40"></div>
+                  </div>
+                  <span className="text-blue-400 font-semibold text-base sm:text-md md:text-md">
+                    Open for freelance
+                  </span>
+                </div>
+              </div>
+            </div>
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center lg:justify-start">
@@ -131,6 +163,7 @@ const Hero = () => {
                 className="w-full sm:w-auto px-8 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl shadow-lg hover:bg-blue-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-center block"
               >
                 View My Projects
+                <ArrowRight className="inline-block w-6 h-6 ml-2 " />
               </Link>
               <Link
                 to="#contact"
@@ -138,7 +171,7 @@ const Hero = () => {
                 className="w-full sm:w-auto px-8 py-4 border-2 border-blue-500 text-blue-400 font-semibold text-lg rounded-xl hover:bg-blue-500 hover:text-white hover:shadow-xl hover:scale-105 transition-all duration-300 text-center block"
               >
                 Get In Touch
-                <Mail className="inline-block w-5 h-5 ml-2 " />
+                <Mail className="inline-block w-6 h-6 ml-2 " />
               </Link>
             </div>
 
@@ -150,12 +183,32 @@ const Hero = () => {
 
               <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-4 md:gap-4">
                 {[
-                  { icon: Linkedin, label: "LinkedIn", to: "https://www.linkedin.com/in/bikram-giri/" },
-                  { icon: Github, label: "GitHub", to: "https://github.com/bikramgiri" },
+                  {
+                    icon: Linkedin,
+                    label: "LinkedIn",
+                    to: "https://www.linkedin.com/in/bikram-giri/",
+                  },
+                  {
+                    icon: Github,
+                    label: "GitHub",
+                    to: "https://github.com/bikramgiri",
+                  },
                   { icon: FaWhatsapp, label: "WhatsApp", to: whatsappUrl },
-                  { icon: Mail, label: "Email", to: "https://mail.google.com/mail/u/0/#compose?to=giribikram40@gmail.com"},
-                  { icon: YoutubeIcon, label: "YouTube", to: "https://www.youtube.com/@technologyknowledgee" },
-                  { icon: Twitter, label: "Twitter", to: "https://x.com/bikram__giri/" },
+                  {
+                    icon: Mail,
+                    label: "Email",
+                    to: "https://mail.google.com/mail/u/0/#compose?to=giribikram40@gmail.com",
+                  },
+                  {
+                    icon: YoutubeIcon,
+                    label: "YouTube",
+                    to: "https://www.youtube.com/@technologyknowledgee",
+                  },
+                  {
+                    icon: Twitter,
+                    label: "Twitter",
+                    to: "https://x.com/bikram__giri/",
+                  },
                 ].map((social, index) => (
                   <Link
                     key={index}
@@ -184,9 +237,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
+      
           {/* Right - Image */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
+          <div className="w-[40%] flex justify-center lg:justify-end mt-6 lg:mt-0">
             <div className="relative">
               {/* Glow Effect */}
               <div className="absolute inset-0 rounded-full bg-blue-400 opacity-30 blur-3xl -z-10 animate-pulse"></div>
@@ -216,6 +269,7 @@ const Hero = () => {
               />
             </div>
           </div>
+              <ScrollToExplore />
         </div>
       </div>
     </section>
