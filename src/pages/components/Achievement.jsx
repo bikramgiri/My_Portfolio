@@ -15,7 +15,7 @@ const Achievements = () => {
   const [filter, setFilter] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCert, setSelectedCert] = useState(null);
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
 
   const certifications = [
     {
@@ -203,7 +203,7 @@ const Achievements = () => {
               <div
                 key={index}
                 onClick={() => setSelectedCert(cert)}
-                className="cursor-pointer group relative bg-gradient-to-br from-blue-900/20 to-blue-950/40 backdrop-blur-md rounded-3xl overflow-hidden border border-blue-800/50 shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 transition-all duration-500"
+                className="cursor-pointer group relative bg-gradient-to-br from-blue-900/20 to-blue-950/40 backdrop-blur-md rounded-xl overflow-hidden border border-blue-800/50 shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-500"
               >
                 {/* Image */}
                 <div className="relative overflow-hidden h-48 md:h-56">
@@ -285,8 +285,8 @@ const Achievements = () => {
               disabled={currentPage === 1}
               className={`cursor-pointer p-3 rounded-full transition-all duration-300 ${
                 currentPage === 1
-                  ? "bg-gray-800/95 dark:text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
-                  : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80 hover:scale-110 shadow-lg"
+                  ? "bg-gray-800/90 text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
+                  : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80"
               }`}
             >
               <ChevronLeft className="w-6 h-6" />
@@ -300,8 +300,8 @@ const Achievements = () => {
                   onClick={() => goToPage(i + 1)}
                   className={`transition-all duration-300 rounded-full ${
                     currentPage === i + 1
-                      ? "bg-blue-400 w-6 h-3 shadow-lg shadow-blue-500/50"
-                      : "bg-gray-600 w-3 h-3 hover:bg-gray-400"
+                      ? "bg-blue-400 w-6 h-3"
+                      : "bg-gray-500 w-3 h-3"
                   }`}
                   aria-label={`Page ${i + 1}`}
                 />
@@ -314,8 +314,8 @@ const Achievements = () => {
               disabled={currentPage === totalPages}
               className={`cursor-pointer p-3 rounded-full transition-all duration-300 ${
                 currentPage === totalPages
-                  ? "bg-gray-800/95 text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
-                  : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80 hover:scale-110 shadow-lg"
+                  ? "bg-gray-800/90 text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
+                  : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80"
               }`}
             >
               <ChevronRight className="w-6 h-6" />

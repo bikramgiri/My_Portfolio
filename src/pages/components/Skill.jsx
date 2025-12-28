@@ -116,7 +116,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-lg rounded-2xl p-8 md:p-10 border border-blue-800/40 shadow-2xl hover:shadow-blue-500/40 hover:border-blue-600/60 hover:-translate-y-4 transition-all duration-500"
+              className="group bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-lg rounded-xl p-8 md:p-10 border border-blue-800/60 shadow-xl hover:shadow-blue-500/15 hover:border-blue-600/50 hover:-translate-y-1 transition-all duration-500"
             >
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-300 mb-8 md:mb-10 text-center">
                 {category.title}
@@ -129,7 +129,7 @@ const Skills = () => {
                     key={idx}
                     className="flex flex-col items-center gap-3 group/item"
                   >
-                    <div className="p-4 md:p-5 bg-blue-900/30 rounded-2xl text-blue-400 group-hover/item:bg-blue-800/50 group-hover/item:scale-110 transition-all duration-300 shadow-lg">
+                    <div className="p-4 md:p-5 bg-blue-900/60 rounded-2xl text-blue-400 group-hover/item:bg-blue-800/70 group-hover/item:scale-105 transition-all duration-300 shadow-lg">
                       {skill.icon}
                     </div>
                     <span className="text-sm md:text-base text-gray-300 text-center font-medium">

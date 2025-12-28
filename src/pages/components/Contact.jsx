@@ -49,7 +49,7 @@ const Contact = () => {
         {/* Responsive Grid: Stack on mobile, side-by-side on lg+ */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
           {/* Left: Get In Touch */}
-          <div className="bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-md rounded-2xl md:rounded-3xl p-8 md:p-10 lg:p-12 border border-blue-800/50 shadow-2xl hover:shadow-blue-500/30 transition-all duration-500">
+          <div className="bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-md rounded-2xl md:rounded-2xl p-8 md:p-10 lg:p-12 border border-blue-800/50 shadow-xl hover:shadow-blue-500/5 transition-all duration-500">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
               Get In Touch
             </h3>
@@ -144,7 +144,7 @@ const Contact = () => {
           </div>
 
           {/* Right: Send Message Form */}
-          <div className="bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-md rounded-2xl md:rounded-3xl p-8 md:p-10 lg:p-12 border border-blue-800/50 shadow-2xl hover:shadow-blue-500/30 transition-all duration-500">
+          <div className="bg-gradient-to-br from-blue-900/30 to-blue-950/60 backdrop-blur-md rounded-2xl md:rounded-2xl p-8 md:p-10 lg:p-12 border border-blue-800/50 shadow-xl hover:shadow-blue-500/5 transition-all duration-500">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-8">
               Send Me a Message
             </h3>
@@ -184,7 +184,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="cursor-pointer flex-1 flex items-center justify-center gap-2 py-4 w-full  md:py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg md:text-xl rounded-xl shadow-lg hover:from-blue-600 hover:to-blue-700 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                className="cursor-pointer flex-1 flex items-center justify-center gap-2 py-4 w-full  md:py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg md:text-xl rounded-xl shadow-md hover:from-blue-600 hover:to-blue-700 hover:shadow-xl hover:scale-101 transition-all duration-300"
               >
                 <SendIcon className="h-5 w-5" />
                 Send Message

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Project = () => {
   const [filter, setFilter] = useState("all"); // "all" or "featured"
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3; // 3 projects per page (3 per row on lg+)
+  const itemsPerPage = 6; // 3 projects per page (3 per row on lg+)
 
   const projects = [
     {
@@ -166,7 +166,7 @@ const Project = () => {
           {paginatedProjects.map((project, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-blue-900/20 to-blue-950/40 backdrop-blur-md rounded-3xl overflow-hidden border border-blue-800/50 shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 transition-all duration-500"
+              className="group relative bg-gradient-to-br from-blue-900/20 to-blue-950/40 backdrop-blur-md rounded-xl overflow-hidden border border-blue-800/50 shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-500"
             >
               {/* Image */}
               <div className="relative overflow-hidden h-48 md:h-56">
@@ -225,7 +225,7 @@ const Project = () => {
                     href={project.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gray-900 text-gray-200 rounded-xl hover:bg-gray-700 hover:text-white transition-all duration-300"
+                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gray-900 dark:text-white rounded-xl hover:bg-gray-700 hover:text-white hover:shadow-md hover:scale-103 transition-all duration-300"
                   >
                     <Github className="w-5 h-5" />
                     Source Code
@@ -234,7 +234,7 @@ const Project = () => {
                     to={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:text-white font-semibold rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 hover:shadow-md hover:scale-103 transition-all duration-300"
                   >
                     <ExternalLink className="w-5 h-5" />
                     Live Preview
@@ -254,8 +254,8 @@ const Project = () => {
               disabled={currentPage === 1}
               className={`cursor-pointer p-3 rounded-full transition-all duration-300 ${
                 currentPage === 1
-                  ? "bg-gray-800/50 text-gray-600 cursor-not-allowed disabled:cursor-not-allowed"
-                  : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80 hover:scale-110 shadow-lg"
+                  ? "bg-gray-800/90 text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
+                  : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80 hover:scale-100"
               }`}
             >
               <ChevronLeft className="w-6 h-6" />
@@ -269,8 +269,8 @@ const Project = () => {
                   onClick={() => goToPage(i + 1)}
                   className={`transition-all duration-300 rounded-full ${
                     currentPage === i + 1
-                      ? "bg-blue-400 w-6 h-3 shadow-lg shadow-blue-500/50"
-                      : "bg-gray-600 w-3 h-3 hover:bg-gray-400"
+                      ? "bg-blue-400 w-6 h-3"
+                      : "bg-gray-500 w-3 h-3"
                   }`}
                   aria-label={`Page ${i + 1}`}
                 />
@@ -283,7 +283,7 @@ const Project = () => {
               disabled={currentPage === totalPages}
               className={`cursor-pointer p-3 rounded-full transition-all duration-300 ${
                 currentPage === totalPages
-                  ? "bg-gray-800/50 text-gray-600 cursor-not-allowed disabled:cursor-not-allowed"
+                  ? "bg-gray-800/90 text-gray-400 cursor-not-allowed disabled:cursor-not-allowed"
                   : "bg-blue-900/60 text-blue-400 hover:bg-blue-800/80 hover:scale-110 shadow-lg"
               }`}
             >

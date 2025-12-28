@@ -139,14 +139,14 @@ const Footer = () => {
         {/* Bottom Copyright & Links */}
         <div className="mt-12 pt-8 border-t border-blue-800/50 text-center">
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 text-sm sm:text-base">
-            <p className="text-gray-500">
+            <p className="text-gray-400">
               © {new Date().getFullYear()} Bikram Giri. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+              <Link to="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+              <Link to="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Terms of Service
               </Link>
             </div>
