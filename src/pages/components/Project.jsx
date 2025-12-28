@@ -234,7 +234,7 @@ const Project = () => {
                     to={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:text-white font-semibold rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 hover:shadow-md hover:scale-103 transition-all duration-300"
+                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:text-white rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 hover:shadow-md hover:scale-103 transition-all duration-300"
                   >
                     <ExternalLink className="w-5 h-5" />
                     Live Preview
