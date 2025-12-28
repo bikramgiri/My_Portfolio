@@ -92,7 +92,7 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen bg-gray-900 flex items-center justify-center px-5 sm:px-6 lg:px-8 py-8 md:py-10 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto w-full mb-22 md:mb-22 lg:mb-0">
+      <div className="max-w-7xl mx-auto w-full mb-18 md:mb-24">
         <div className="flex flex-col lg:flex-row items-center gap-10 xl:gap-16">
           {/* Left - Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6 md:space-y-7">
