@@ -158,7 +158,7 @@ const Achievements = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Title */}
-        <div className="text-center mb-12 md:mb-16 lg:mb-14">
+        <div className="text-center mb-12 md:mb-10 lg:mb-10">
           <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl font-bold text-blue-400 mb-4">
             Certifications & Achievements
           </h2>
@@ -169,7 +169,7 @@ const Achievements = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex justify-center gap-4 mb-10 md:mb-16">
+        <div className="flex justify-center gap-4 mb-10 md:mb-10">
           <button
             onClick={() => handleFilterChange("all")}
             className={`cursor-pointer px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg flex items-center gap-2 ${

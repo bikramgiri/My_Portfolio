@@ -64,7 +64,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-sm md:text-base text-gray-400">Email</p>
+                  <p className="text-md md:text-base text-gray-400">Email</p>
                   <Link
                     to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=giribikram40@gmail.com"
                     target="_blank"
@@ -81,7 +81,7 @@ const Contact = () => {
                   <Phone className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-sm md:text-base text-gray-400">Phone</p>
+                  <p className="text-md md:text-base text-gray-400">Phone</p>
                   <Link
                     to="tel:98XXXXXXXX"
                     className="text-lg sm:text-xl text-white hover:text-blue-400 transition-colors duration-300"
@@ -96,7 +96,7 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-sm md:text-base text-gray-400">Location</p>
+                  <p className="text-md md:text-base text-gray-400">Location</p>
                   <p className="text-lg sm:text-xl text-white">Itahari, Sunsari, Nepal</p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                 type="text"
                 name="user_name"
                 placeholder="Your Name"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/5 transition-all duration-300"
                 required
               />
 
@@ -162,7 +162,7 @@ const Contact = () => {
                 type="email"
                 name="user_email"
                 placeholder="Your Email"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/5 transition-all duration-300"
                 required
               />
 
@@ -170,7 +170,7 @@ const Contact = () => {
                 type="text"
                 name="subject"
                 placeholder="Subject"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/5 transition-all duration-300"
                 required
               />
 
@@ -178,7 +178,7 @@ const Contact = () => {
                 name="message"
                 placeholder="Your Message"
                 rows="5"
-                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-400/30 transition-all duration-300 resize-none"
+                className="w-full px-5 py-3.5 md:px-6 md:py-4 bg-gray-900/40 border border-blue-700/50 rounded-xl text-white placeholder-gray-400 text-base md:text-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/5 transition-all duration-300 resize-none"
                 required
               ></textarea>
 

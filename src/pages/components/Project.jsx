@@ -3,79 +3,69 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight, Star, ShieldCheckIcon,
 import { Link } from "react-router-dom";
 
 const Project = () => {
-  const [filter, setFilter] = useState("all"); // "all" or "featured"
+  const [filter, setFilter] = useState("all"); 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6; // 3 projects per page (3 per row on lg+)
+  const itemsPerPage = 6; 
 
   const projects = [
     {
-      title: "ChatGPT Clone",
+      title: "Student Management System",
       description: "A full-featured clone of ChatGPT developed using React.js, TypeScript, and OpenAI API integration.",
       tech: "Full Stack",
-      techStack: ["React", "Tailwind CSS", "TypeScript", "Node.js", "OpenAI API"],
-      liveDemo: "https://your-chatgpt-clone.com",
-      sourceCode: "https://github.com/yourusername/chatgpt-clone",
-      image: "/Project.png",
-      featured: false,
-    },
-    {
-      title: "Kalakriti E-Commerce",
-      description: "Multi-user e-commerce platform built with MERN stack featuring authentication, cart, and payment gateway.",
-      tech: "Full Stack",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
-      liveDemo: "https://kalakriti-demo.com",
-      sourceCode: "https://github.com/yourusername/kalakriti-ecommerce",
-      image: "/Project.png",
+      techStack: ["React", "Tailwind CSS", "Express", "Node.js", "MongoDB"],
+      liveDemo: "https://student-management-system-sms.vercel.app/",
+      sourceCode: "https://github.com/bikramgiri/Student_Management_System",
+      image: "/projects/student-management-system.jpg",
       featured: true,
     },
     {
-      title: "Wanderlust",
-      description: "Airbnb-like web app for booking hotels, rooms, and experiences. Built with MERN stack and Map integration.",
-      tech: "Full Stack",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Mapbox"],
-      liveDemo: "https://wanderlust-demo.com",
-      sourceCode: "https://github.com/yourusername/wanderlust",
-      image: "/Project.png",
-      featured: false,
-    },
-    {
-      title: "Task Manager Pro",
-      description: "Advanced task management app with real-time collaboration, drag-and-drop, and team features.",
-      tech: "Full Stack",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
-      liveDemo: "https://taskmanager-demo.com",
-      sourceCode: "https://github.com/yourusername/task-manager",
-      image: "/Project.png",
-      featured: false,
-    },
-    {
-      title: "Todo App",
-      description: "A sleek and responsive todo application with CRUD operations, local storage, and dark mode support.",
+      title: "Book Management System",
+      description: "E-commerce platform for art and craft products with user authentication, product management, and payment integration.",
       tech: "Full Stack",
       techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-      liveDemo: "https://todo-demo.com",
-      sourceCode: "https://github.com/yourusername/todo-app",
-      image: "/Project.png",
+      liveDemo: "#",
+      sourceCode: "https://github.com/bikramgiri/book-management-system",
+      image: "/projects/book-management-system.png",
+      featured: false,
+    },
+    {
+      title: "Content Management System",
+      description: "A travel planning app with interactive maps, itinerary creation, and user reviews to enhance trip organization.",
+      tech: "Full Stack",
+      techStack: ["CSS", "Node.js", "Express", "MySql", "ejs"],
+      liveDemo: "#",
+      sourceCode: "https://github.com/bikramgiri/Content_Management_System",
+      image: "/projects/content-management-system.png",
+      featured: false,
+    },
+    {
+      title: "Online Food Delivery System",
+      description: "A comprehensive food delivery application with user authentication, restaurant listings, and order tracking features.",
+      tech: "Full Stack",
+      techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      liveDemo: "#",
+      sourceCode: "https://github.com/bikramgiri/Online_Food_Delivery_System_Frontend",
+      image: "/projects/online-food-delivery-system.png",
       featured: true,
     },
     {
       title: "Portfolio Website",
       description: "Personal portfolio built with React, Tailwind CSS, and smooth animations showcasing projects and skills.",
       tech: "Frontend",
-      techStack: ["React", "Tailwind CSS", "Framer Motion"],
-      liveDemo: "https://your-portfolio.com",
-      sourceCode: "https://github.com/yourusername/portfolio",
-      image: "/Project.png",
-      featured: true,
+      techStack: ["React js", "Tailwind CSS", "email js"],
+      liveDemo: "https://bikram-giri.com.np",
+      sourceCode: "#",
+      image: "/projects/bikram-giri-portfolio.png",
+      featured: false,
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather app with location search, forecasts, and beautiful UI using OpenWeather API.",
-      tech: "Frontend",
-      techStack: ["React", "Tailwind CSS", "OpenWeather API"],
-      liveDemo: "https://weather-demo.com",
-      sourceCode: "https://github.com/yourusername/weather-app",
-      image: "/Project.png",
+      title: "Forum Management System",
+      description: "Forum management system allowing users to create, manage, and participate in discussion forums.",
+      tech: "Full Stack",
+      techStack: ["Node js", "Express", "CSS", "ejs", "MySQL"],
+      liveDemo: "#",
+      sourceCode: "https://github.com/bikramgiri/Forum_Management_System",
+      image: "/projects/forum-management-system.png",
       featured: false,
     },
     {
@@ -83,9 +73,19 @@ const Project = () => {
       description: "Full-featured blogging platform with user auth, rich text editor, and comment system.",
       tech: "Full Stack",
       techStack: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-      liveDemo: "https://blog-demo.com",
-      sourceCode: "https://github.com/yourusername/blog-platform",
-      image: "/Project.png",
+      liveDemo: "#",
+      sourceCode: "https://github.com/bikramgiri/blog-platform",
+      image: "/projects/blog-management-system.png",
+      featured: false,
+    },
+    {
+      title: "E-learning Platform",
+      description: "A task management application featuring user authentication, task CRUD operations, and deadline reminders.",
+      tech: "Full Stack",
+      techStack: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS"],
+      liveDemo: "#",
+      sourceCode: "https://github.com/bikramgiri/Learning_Management_System",
+      image: "/projects/learning-management-system.png",
       featured: true,
     },
   ];
@@ -126,7 +126,7 @@ const Project = () => {
     <section id="projects" className="min-h-screen bg-gray-900 py-12 sm:py-16 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-12 md:mb-16 lg:mb-14">
+        <div className="text-center mb-12 md:mb-10 lg:mb-10">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-400 mb-4">
             Projects
           </h2>
@@ -137,7 +137,7 @@ const Project = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex justify-center gap-4 mb-10 md:mb-12">
+        <div className="flex justify-center gap-4 mb-10 md:mb-10">
           <button
             onClick={() => handleFilterChange("all")}
             className={`cursor-pointer px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg ${
@@ -222,7 +222,7 @@ const Project = () => {
                 {/* Buttons */}
                 <div className="flex gap-4 pt-4 border-t border-blue-800/40">
                   <Link
-                    href={project.sourceCode}
+                    to={project.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gray-900 dark:text-white rounded-xl hover:bg-gray-700 hover:text-white hover:shadow-md hover:scale-103 transition-all duration-300"
