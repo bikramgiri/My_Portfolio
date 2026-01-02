@@ -182,7 +182,7 @@ const Project = () => {
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div> */}
 
                 {/* Badges */}
-                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-wrap gap-32 sm:gap-34">
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-wrap gap-31 sm:gap-34">
                   <span className="px-2.5 py-1 sm:px-3 sm:py-1.5 bg-green-600 dark:text-white text-xs sm:text-sm font-medium rounded-full flex items-center gap-1.5 border border-green-500/50 ">
                     <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     Verified
