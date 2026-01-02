@@ -21,17 +21,18 @@ const Achievements = () => {
     {
       title: "Full Stack Development with MERN Stack",
       issuer: "Digital Pathshala",
-      date: "May 24, 2023",
+      date: "May 24, 2025",
       verified: true,
       featured: true,
-      image: "/Certificate.png",
+      image: "certifications/Certificate.png",
       Cerurl: "https://digitalpathshala.com/certificate/your-certificate-id",
       techs: [
         "Node.js",
         "MongoDB",
         "React",
+        "Tailwind CSS",
         "Express",
-        "Redux",
+        "Redux ToolKit",
         "JWT",
         "Mongoose",
       ],
@@ -39,64 +40,64 @@ const Achievements = () => {
         "Completed comprehensive full-stack training covering MongoDB, Express, React, and Node.js.",
     },
     {
-      title: "Machine Learning Fundamentals",
-      issuer: "Simplilearn",
-      date: "June 10, 2024",
+      title: "AI for Beginners",
+      issuer: "HP LIFE",
+      date: "April 14, 2025",
       verified: true,
-      featured: false,
-      image: "/Certificate.png",
-      cerurl: "https://www.simplilearn.com/certificate/your-certificate-id",
-      techs: ["Python", "Machine Learning", "NumPy", "Pandas"],
+      featured: true,
+      image: "certifications/ai-for-beginners.png",
+      cerurl: "https://drive.google.com/file/d/1bGkoznrNLCtqSM7gfRbE3oY7Ox_OqD-F/view",
+      techs: ["AI", "ML", "Python"],
       description:
-        "Gained foundational knowledge in machine learning concepts and algorithms using Python.",
+        "Completed introductory course on Artificial Intelligence and Machine Learning concepts.",
     },
     {
-      title: "30 Days of Next.js Workshop",
+      title: "30 Days of React.js Workshop",
       issuer: "Digital Pathshala",
-      date: "October 1, 2024",
+      date: "September 20, 2024",
       verified: true,
-      featured: false,
-      image: "/cv2.png",
-      cerurl: "https://digitalpathshala.com/certificate/your-certificate-id",
-      techs: ["Next.js", "NextAuth.js"],
+      featured: true,
+      image: "certifications/react-js.png",
+      cerurl: "https://drive.google.com/file/d/1VDwzy00mA-UUikv0KCgKYGf3tVHidgbO/view",
+      techs: ["React.js"],
       description:
-        "Participated in advanced workshop focused on Next.js 14, server actions, and authentication.",
+        "Participated in advanced workshop focused on React.js, server actions, and authentication.",
     },
     {
-      title: "Advanced Python Programming",
+      title: "Intermediate Python",
       issuer: "DataCamp",
-      date: "September 1, 2024",
+      date: "JUN 18, 2025",
       verified: true,
       featured: true,
-      image: "/Certificate.png",
-      cerurl: "https://www.datacamp.com/certificate/your-certificate-id",
-      techs: ["Python", "Data Analysis", "Pandas", "Matplotlib", "Seaborn"],
+      image: "certifications/intermediate-python.png",
+      cerurl: "https://drive.google.com/file/d/1a9XdpJMpuXqr4pThvYH_dqmtUprcsx2A/view",
+      techs: ["Python", "Data Analysis", "Pandas", "NumPy"],
       description:
-        "Completed advanced courses in Python programming and data analysis techniques.",
+        "Completed intermediate-level Python course focusing on data analysis and manipulation using Pandas and NumPy.",
     },
     {
-      title: "Introduction to Backend Development",
-      issuer: "Great Learning",
-      date: "August 15, 2024",
+      title: "30 Days of Node.js Workshop",
+      issuer: "Digital Pathshala",
+      date: "June 23, 2025",
       verified: true,
       featured: true,
-      image: "/Certificate.png",
-      cerurl: "https://www.greatlearning.in/certificate/your-certificate-id",
-      techs: ["Node.js", "Express", "Databases", "REST API", "Postman"],
+      image: "certifications/node-js.png",
+      cerurl: "https://drive.google.com/file/d/1UGN7R-BDUBw4w85ePhhSe19XvVf_u5WU/view",
+      techs: ["Node.js", "Express"],
       description:
-        "Gained foundational knowledge in backend development using Node.js and Express framework.",
+        "Completed intensive workshop on Node.js, covering server-side development and Express framework.",
     },
     {
-      title: "Web Development Bootcamp",
-      issuer: "Udemy",
-      date: "June 10, 2024",
+      title: "7 Days Next.js workshop",
+      issuer: "Tech Research and Innovation",
+      date: "December 26, 2024",
       verified: true,
       featured: false,
-      image: "/Certificate.png",
-      cerurl: "https://www.udemy.com/certificate/your-certificate-id",
-      techs: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+      image: "certifications/next-js.png",
+      cerurl: "https://drive.google.com/file/d/1h4Fy5YV3tBza1deZFnfxrqH2ujvvoFIm/view",
+      techs: ["Next.js", "SSR", "React"], 
       description:
-        "Completed comprehensive web development training covering HTML, CSS, and JavaScript fundamentals.",
+        "Completed a focused workshop on Next.js, exploring server-side rendering and React integration.",
     },
     {
       title: "Introduction to Artificial Intelligence",
@@ -104,23 +105,83 @@ const Achievements = () => {
       date: "April 5, 2024",
       verified: true,
       featured: false,
-      image: "/Certificate.png",
+      image: "certifications/Certificate.png",
       cerurl: "https://www.coursera.org/certificate/your-certificate-id",
       techs: ["AI", "Machine Learning", "Neural Networks", "TensorFlow"],
       description:
         "Completed foundational courses in artificial intelligence and machine learning concepts.",
     },
     {
-      title: "UI/UX Design Fundamentals",
-      issuer: "Google UX Design",
-      date: "March 20, 2024",
+      title: "4+ Hours Git and GitHub Session",
+      issuer: "Digital Pathshala",
+      date: "May 03, 2025",
       verified: true,
       featured: false,
-      image: "/Certificate.png",
-      cerurl: "https://www.coursera.org/certificate/your-certificate-id",
-      techs: ["Figma", "User Research", "Wireframing", "Prototyping"],
+      image: "certifications/git-github.png",
+      cerurl: "https://drive.google.com/file/d/1jfVIaErbkDJQepf__STLalKrFeCyHFil/view",
+      techs: ["Git", "GitHub"],
       description:
-        "Professional certificate in UX design principles and user-centered design process.",
+        "Completed an in-depth session on version control using Git and GitHub for collaborative development.",
+    },
+    {
+      title: "Understanding Machine Learning",
+      issuer: "DataCamp",
+      date: "SEP 01, 2025",
+      verified: true,
+      featured: false,
+      image: "certifications/machine-learning.png",
+      cerurl: "https://drive.google.com/file/d/1f_UhpzCPX501RgMWxvYmNFERbC2TTFb-/view",
+      techs: ["Machine Learning", "AI"],
+      description:
+        "Completed foundational course on machine learning algorithms and applications.",
+    },
+    {
+      title: "Digital Marketing",
+      issuer: "SHETECH PNC",
+      date: "Ashj 11, 2082",
+      verified: true,
+      featured: false,
+      image: "certifications/digital-marketing.png",
+      cerurl: "https://drive.google.com/file/d/15PTm1XDGzS2qnT_IegkRjAr6SGQiaxQE/view",
+      techs: ["Digital Marketing"],
+      description:
+        "Completed a comprehensive course on digital marketing strategies and tools.",
+    },
+    {
+      title: "Introduction to Generative AI",
+      issuer: "SimpliLearn",
+      date: "December 14, 2023",
+      verified: true,
+      featured: true,
+      image: "certifications/generative-ai.png",
+      cerurl: "https://drive.google.com/file/d/1aFEWhOdJk4siE2_8Ktdb_iTYSJ9C7DyW/view",
+      techs: ["Generative AI", "AI"],
+      description:
+        "Completed an introductory course on generative AI technologies and applications.",
+    },
+    {
+      title: "Search Engine Optimization (SEO) Fundamentals",
+      issuer: "Sharing Mentorship",
+      date: "December 17, 2022",
+      verified: true,
+      featured: false,
+      image: "certifications/seo.png",
+      cerurl: "https://drive.google.com/file/d/1qDutLUZlRPo3aNaf2d2N1Yrvw9dxwAM-/view",
+      techs: ["SEO"],
+      description:
+        "Completed foundational training on search engine optimization techniques and best practices.",
+    },
+    {
+      title: "Prompt Engineering",
+      issuer: "DataCamp",
+      date: "AUG 23, 2025",
+      verified: true,
+      featured: true,
+      image: "certifications/prompt-engineering.png",
+      cerurl: "https://drive.google.com/file/d/1jlYjMy4mUzfu67Xq1OkthXJf2Gss0lDT/view",
+      techs: ["Prompt Engineering", "AI"],
+      description:
+        "Completed specialized course on crafting effective prompts for AI language models.",
     },
   ];
 
@@ -215,14 +276,14 @@ const Achievements = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
 
                   {/* Badges */}
-                  <div className="absolute top-4 left-4 flex flex-wrap gap-48">
-                    <span className="px-2 py-1 bg-green-600 dark:text-white text-sm font-medium rounded-full flex items-center gap-1.5 border border-green-500/50">
-                      <ShieldCheck className="w-3 h-3 dark:text-white" />
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-wrap gap-32 sm:gap-34">
+                    <span className="px-2.5 py-1 sm:px-3 sm:py-1.5 bg-green-600 dark:text-white text-xs sm:text-sm font-medium rounded-full flex items-center gap-1.5 border border-green-500/50 ">
+                      <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       Verified
                     </span>
                     {cert.featured && (
-                      <span className="px-2 py-1 bg-orange-600 dark:text-white text-sm font-medium rounded-full flex items-center gap-1.5 border border-orange-500/50">
-                        <Star className="w-3 h-3 dark:text-white" />
+                      <span className="px-2.5 py-1 sm:px-3 sm:py-1.5 bg-orange-600 dark:text-white text-xs sm:text-sm font-medium rounded-full flex items-center gap-1.5 border border-orange-500/50">
+                        <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                         Featured
                       </span>
                     )}
@@ -355,14 +416,14 @@ const Achievements = () => {
               </div>
 
               <div className="px-6 md:px-6 pb-6">
-                <div className="bg-gray-700/60 border border-gray-700 rounded-xl overflow-hidden shadow-xl mx-auto max-w-4xl">
+                <div className="bg-gray-700/60 border border-gray-700 rounded-xl overflow-hidden shadow-md mx-auto max-w-5xl">
                   {/* Container with fixed aspect ratio to center image */}
                   <div className="relative w-full bg-black/20 flex items-center justify-center pl-25 md:pl-25 pr-25 md:pr-25">
                     <img
                       src={selectedCert.image}
                       alt={selectedCert.title}
                       className="max-w-full max-h-full h-auto w-auto object-contain shadow-inner"
-                      style={{ maxHeight: "70vh" }} // Prevents image from being too tall on small screens
+                      style={{ maxHeight: "110vh" }} // Prevents image from being too tall on small screens
                     />
                   </div>
                 </div>

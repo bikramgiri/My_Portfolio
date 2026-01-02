@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ExternalLink, Github, ChevronLeft, ChevronRight, Star, ShieldCheckIcon, StarIcon } from "lucide-react";
+import { ExternalLink, Github, ChevronLeft, ChevronRight, Star, ShieldCheckIcon, StarIcon, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Project = () => {
@@ -123,7 +123,10 @@ const Project = () => {
   };
 
   return (
-    <section id="projects" className="min-h-screen bg-gray-900 py-12 sm:py-16 md:py-20 px-6">
+    <section
+      id="projects"
+      className="min-h-screen bg-gray-900 py-12 sm:py-16 md:py-20 px-6"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12 md:mb-10 lg:mb-10">
@@ -132,7 +135,8 @@ const Project = () => {
           </h2>
           <div className="w-24 sm:w-32 md:w-40 h-1 bg-blue-400 mx-auto rounded-full shadow-lg shadow-blue-500/60"></div>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4 mt-4">
-            Here are some of the projects I’ve worked on recently. If you have a project in mind, feel free to get in touch.
+            Here are some of the projects I’ve worked on recently. If you have a
+            project in mind, feel free to get in touch.
           </p>
         </div>
 
@@ -178,14 +182,14 @@ const Project = () => {
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div> */}
 
                 {/* Badges */}
-                <div className="absolute top-4 left-4 flex flex-wrap gap-48">
-                  <span className="px-2 py-1 bg-green-600 dark:text-white text-sm font-medium rounded-full flex items-center gap-1.5 border border-green-500/50">
-                    <ShieldCheckIcon className="w-3 h-3 dark:text-white" />
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-wrap gap-32 sm:gap-34">
+                  <span className="px-2.5 py-1 sm:px-3 sm:py-1.5 bg-green-600 dark:text-white text-xs sm:text-sm font-medium rounded-full flex items-center gap-1.5 border border-green-500/50 ">
+                    <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     Verified
                   </span>
                   {project.featured && (
-                    <span className="px-2 py-1 bg-orange-600 dark:text-white text-sm font-medium rounded-full flex items-center gap-1.5 border border-orange-500/50">
-                      <StarIcon className="w-3 h-3 dark:text-white" />
+                    <span className="px-2.5 py-1 sm:px-3 sm:py-1.5 bg-orange-600 dark:text-white text-xs sm:text-sm font-medium rounded-full flex items-center gap-1.5 border border-orange-500/50">
+                      <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       Featured
                     </span>
                   )}
