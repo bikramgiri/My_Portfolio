@@ -100,18 +100,6 @@ const Achievements = () => {
         "Completed a focused workshop on Next.js, exploring server-side rendering and React integration.",
     },
     {
-      title: "Introduction to Artificial Intelligence",
-      issuer: "Coursera",
-      date: "April 5, 2024",
-      verified: true,
-      featured: false,
-      image: "certifications/Certificate.png",
-      cerurl: "https://www.coursera.org/certificate/your-certificate-id",
-      techs: ["AI", "Machine Learning", "Neural Networks", "TensorFlow"],
-      description:
-        "Completed foundational courses in artificial intelligence and machine learning concepts.",
-    },
-    {
       title: "4+ Hours Git and GitHub Session",
       issuer: "Digital Pathshala",
       date: "May 03, 2025",
