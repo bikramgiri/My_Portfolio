@@ -229,7 +229,7 @@ const Project = () => {
                     to={project.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-gray-900 dark:text-white rounded-xl hover:bg-gray-700 hover:text-white hover:shadow-md hover:scale-103 transition-all duration-300"
+                    className="flex-1 flex items-center justify-center gap-2 px-2 py-3 bg-blue-500 dark:text-white rounded-xl hover:bg-blue-600 hover:text-white hover:shadow-md hover:scale-103 transition-all duration-300"
                   >
                     <Github className="w-5 h-5" />
                     Source Code
