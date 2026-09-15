@@ -98,6 +98,8 @@ const Navbar = () => {
                     href={link.path}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Visit Bikram's Blog (giribikram.com.np) by Bikram Giri"
+                    aria-label="Visit Bikram's Blog"
                     className="flex items-center gap-2 text-lg font-medium text-gray-300 hover:text-blue-400 transition-colors duration-200 relative group"
                   >
                     {link.name}
@@ -166,6 +168,7 @@ const Navbar = () => {
                       href={link.path}
                       target="_blank"
                       rel="noopener noreferrer"
+                      title="Visit Bikram's Blog (giribikram.com.np)"
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="flex items-center justify-between px-6 py-4 text-2xl font-medium rounded-xl transition-all duration-300 hover:bg-blue-900/40"
                     >

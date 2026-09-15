@@ -95,6 +95,17 @@ const Footer = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="https://giribikram.com.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base sm:text-lg text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-300 block"
+                  title="Bikram's Blog - Official Tech Blog by Bikram Giri"
+                >
+                  Bikram's Blog ↗
+                </a>
+              </li>
             </ul>
           </div>
 

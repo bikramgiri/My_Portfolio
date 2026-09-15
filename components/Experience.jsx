@@ -25,9 +25,9 @@ const Experience = () => {
       link: "https://giribikram.com.np/",
       linkText: "Read Blogs",
       responsibilities: [
-        "Writing in-depth blogs on technology, AI, AI tools, and emerging digital trends",
-        "Creating high-quality BSc CSIT notes, e-books, and study resources for students",
-        "Sharing practical learning experiences, tutorials, and career-focused insights",
+        "Writing in-depth articles on Bikram's Blog (giribikram.com.np) covering AI tools, web development, and tech innovations",
+        "Publishing high-quality BSc CSIT study notes, e-books, and programming guides on Bikram Blog",
+        "Sharing practical software engineering experiences, tutorials, and career-focused insights",
         "Building a trusted personal brand through consistent, SEO-optimized educational content",
       ],
     },
