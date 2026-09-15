@@ -1,3 +1,11 @@
+# Next.js build & cache
+.next/
+out/
+build/
+
+# Dependencies
+node_modules/
+
 # Logs
 logs
 *.log
@@ -7,14 +15,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-
-src/pages/components/Hero1.jsx
+# Environment files
 .env
+.env*.local
 
 # Editor directories and files
 .vscode/*
